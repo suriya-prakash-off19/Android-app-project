@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:id="@+id/meeting_card"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/meeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/box"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/more2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/more2" />
+
+        <TextView
+            android:id="@+id/eventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toStartOf="@+id/more2"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Sucess 2k23"
+            android:textColor="@color/textColor"
+            android:textSize="25sp"
+            tools:ignore="HardCodedtext" />
+
+        <TextView
+            android:id="@+id/Venue_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="81dp"
+            android:text="Venue:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp"
+            tools:ignore="HardCodedtext" />
+
+        <TextView
+            android:id="@+id/Venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Venue_22"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/Venue_22"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="MBA block"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Guest_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Venue_22"
+            android:layout_alignStart="@+id/Venue_22"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="40dp"
+            android:text="Guest:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Venue"
+            android:layout_alignTop="@+id/Guest_22"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Dr.Lakshimi M.sc, ph.D"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Guest_22"
+            android:layout_alignStart="@+id/Guest_22"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:text="Host:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Host"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Guest"
+            android:layout_alignTop="@+id/host"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Dr.R.Dhanapal M.E, ph,D"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Time_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Date_22"
+            android:layout_alignStart="@+id/Date_22"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:text="Time:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/Date_22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:text="Date:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Date"
+            android:layout_alignTop="@+id/Time_22"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="10:00AM"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/description_22"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/Time_22"
+            android:layout_alignStart="@+id/Time_22"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:text="Description:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Description"
+            android:layout_width="241dp"
+            android:layout_height="130dp"
+            android:layout_below="@+id/description_22"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/box"
+            android:gravity="top|left"
+            android:paddingLeft="10dp"
+            android:text="TextView"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Depart"
+            android:layout_alignTop="@+id/Date_22"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="14/03/2022"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/host"
+            android:layout_alignStart="@+id/host"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:text="Department:"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Depart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/Host"
+            android:layout_alignTop="@+id/textView"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:padding="2dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="Depart"
+            android:textColor="@color/textColor"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

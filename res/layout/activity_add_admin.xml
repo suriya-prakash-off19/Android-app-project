@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_admin">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="671dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="22dp"
+        android:background="@drawable/round">
+
+        <EditText
+            android:id="@+id/Admin_name"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="57dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="Admin Name"
+            android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/Admin_Email"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/Admin_name"
+            android:layout_alignStart="@+id/Admin_name"
+            android:layout_alignEnd="@+id/Admin_name"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="Email ID"
+            android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/Admin_field"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/Admin_Email"
+            android:layout_alignStart="@+id/Admin_Email"
+            android:layout_alignEnd="@+id/Admin_Email"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="Field"
+            android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/AdminDepart"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/Admin_field"
+            android:layout_alignStart="@+id/Admin_field"
+            android:layout_alignEnd="@+id/Admin_field"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="Department"
+            android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/Admin_Password"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/AdminDepart"
+            android:layout_alignStart="@+id/AdminDepart"
+            android:layout_alignEnd="@+id/AdminDepart"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="Password"
+            android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/Admin_DOB"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/Admin_Password"
+            android:layout_alignStart="@+id/Admin_Password"
+            android:layout_alignEnd="@+id/Admin_Password"
+            android:layout_marginStart="-0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="DOB"
+            android:textColor="@color/textColor" />
+
+        <EditText
+            android:id="@+id/Admin_phone"
+            android:layout_width="290dp"
+            android:layout_height="48dp"
+            android:layout_below="@id/Admin_DOB"
+            android:layout_alignStart="@+id/Admin_DOB"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:hint="Phone"
+            android:textColor="@color/textColor" />
+
+        <Button
+            android:id="@+id/Admin_summit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Admin_DOB"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="91dp"
+            android:layout_marginEnd="159dp"
+            android:text="Summit" />
+    </RelativeLayout>
+</RelativeLayout>

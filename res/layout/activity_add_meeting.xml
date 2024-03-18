@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_meeting">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Meeting Information"
+        android:textSize="24sp"
+        android:id="@+id/heading"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:gravity="center"
+        android:textStyle="bold|italic"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/meeting_name"
+        android:hint="Meeting Name"
+        android:paddingStart="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:layout_below="@+id/heading"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/meetin_venue"
+        android:hint="Meeting Venue"
+        android:paddingStart="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:layout_below="@+id/meeting_name"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/Department"
+        android:hint="Department"
+        android:paddingStart="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:layout_below="@+id/meetin_venue"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/meeting_DOB"
+        android:hint="Date of Meeting"
+        android:focusable="false"
+        android:paddingStart="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:layout_below="@+id/Department"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/meeting_host"
+        android:hint="Host"
+        android:paddingStart="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:layout_below="@+id/meeting_DOB"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/Guests"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/meeting_host"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:hint="Guest"
+        android:maxLines="3"
+        android:paddingStart="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/meeting_time"
+        android:hint="Event Time"
+        android:paddingStart="20dp"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:background="@drawable/round"
+        android:layout_below="@+id/Guests"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/meeting_time"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round"
+        android:hint="Description"
+        android:textColor="@color/textColor"
+        android:textColorHint="@color/textColor"
+        android:id="@+id/meeting_description"
+        android:paddingLeft="20dp"
+        android:gravity="top|left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meeting_description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/meeting_summit"
+        android:textColor="@color/textColor"
+        android:layout_marginBottom="4dp"
+        android:text="summit"
+        />
+</RelativeLayout>
